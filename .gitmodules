@@ -9,7 +9,7 @@
 	url = git://github.com/gorakhargosh/cython.git
 [submodule "vendor/srspeedbar"]
 	path = vendor/srspeedbar
-	url = git://github.com/gorakhargosh/sr-speedbar.git
+	url = git://github.com/emacsmirror/sr-speedbar.git
 [submodule "vendor/ack-and-a-half"]
 	path = vendor/ack-and-a-half
 	url = git://github.com/gorakhargosh/ack-and-a-half.git
@@ -18,7 +18,7 @@
 	url = git://github.com/gorakhargosh/Pymacs.git
 [submodule "vendor/zencoding"]
 	path = vendor/zencoding
-	url = git://github.com/gorakhargosh/zencoding.git
+	url = git://github.com/emacsmirror/zencoding.git
 [submodule "vendor/helm"]
 	path = vendor/helm
 	url = git://github.com/emacs-helm/helm.git
