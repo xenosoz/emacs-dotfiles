@@ -13,7 +13,8 @@
         python-indent 4
         py-indent-offset 4))
 
-(set-python-coding-style)
+(add-hook 'python-mode-hook 'set-python-coding-style)
+
 
 ;; Auto enable markdown mode
 ;;(require 'markdown-mode)
@@ -32,5 +33,15 @@
                          (buffer-substring-no-properties
                           (line-beginning-position) (line-end-position))))
       (setq ad-return-value (- ad-return-value python-indent))))
+
+(defun set-gyp-coding-style ()
+  (setq indent-tabs-mode nil
+        require-final-newline 't
+        tab-width 2
+        python-indent-offset 2
+        python-indent 2
+        py-indent-offset 2))
+
+(add-hook 'gyp-mode-hook 'set-gyp-coding-style)
 
 ;;; xenosoz.el ends here.
