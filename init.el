@@ -197,7 +197,7 @@
 (setq mouse-wheel-scroll-amount '(7 ((shift) . 1) ((control) . nil)))
 
 ;; Enable the menu bar.
-(menu-bar-mode t)
+;;(menu-bar-mode t)
 
 ;; Stop prompting to save abbrevs.
 (setq save-abbrevs nil)
@@ -205,7 +205,7 @@
 ;; Automatically reload files changed on disk.
 (global-auto-revert-mode t)
 
-(fset 'yes-or-no-p 'y-or-n-p)
+;;(fset 'yes-or-no-p 'y-or-n-p)
 (global-linum-mode t)
 
 ;; Automatically remove trailing whitespace.
@@ -398,5 +398,8 @@
 
 (require 'helm-config)
 (helm-mode 1)
+
+;; user specific
+(load-file (concat config-dir "xenosoz.el"))
 
 ;;; init.el ends here
