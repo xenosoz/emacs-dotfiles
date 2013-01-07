@@ -15,6 +15,16 @@
 
 (add-hook 'python-mode-hook 'set-python-coding-style)
 
+;; Try to follow Google C Style Guide.
+(defun set-c-coding-style ()
+  (setq indent-tabs-mode nil
+        c-basic-offset 4)
+  (c-set-offset 'substatement-open 0))
+
+(add-hook 'objc-mode-hook 'set-c-coding-style)
+(add-hook 'c-mode-hook 'set-c-coding-style)
+(add-hook 'c++-mode-hook 'set-c-coding-style)
+
 
 ;; Auto enable markdown mode
 ;;(require 'markdown-mode)
